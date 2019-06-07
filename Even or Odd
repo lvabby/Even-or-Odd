@@ -1,0 +1,29 @@
+import javax.swing.JOptionPane;
+public class EvenorOdd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	String evenodd ="";
+	boolean done = false;
+	
+	while (!done) {
+	String num = JOptionPane.showInputDialog("Enter a number: ");
+	if (Integer.parseInt(num)%2==0) {
+		JOptionPane.showMessageDialog(null, "Number is even");
+	}//if
+		else {
+			JOptionPane.showMessageDialog(null, "Number is odd");
+		}//else
+	String ans = JOptionPane.showInputDialog("Do you want to try another number Yes/No? ");
+	if (ans.equals("yes") || ans.equals("YES")|| ans.equals("y") || ans.equals("Y")) {
+		// num = JOptionPane.showInputDialog("Enter a number: ");
+	}
+	}//while loop
+	
+	
+	//display message 
+	//	JOptionPane.showMessageDialog(null, num);
+
+	}
+
+}
